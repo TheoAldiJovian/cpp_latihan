@@ -1,0 +1,11 @@
+# Abaikan file hasil kompilasi
+lev1
+lev2
+lev3
+lev4
+
+# Abaikan file object (jika nanti ada)
+*.o
+
+# Abaikan file executable umum lain (jika nanti ada)
+*.out
