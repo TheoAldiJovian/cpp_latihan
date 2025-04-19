@@ -3,6 +3,9 @@ lev1
 lev2
 lev3
 lev4
+lev5
+lev6
+lev7
 
 # Abaikan file object (jika nanti ada)
 *.o
