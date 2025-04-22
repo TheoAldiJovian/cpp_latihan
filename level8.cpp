@@ -78,6 +78,7 @@ int main() {
 // Dibuat Oleh: Fajarenaldi (Direvisi)
 // Tanggal: 21 April 2025
 
+/*
 #include <iostream>
 #include <string>
 #include <vector> // Include header untuk std::vector
@@ -158,7 +159,42 @@ int main() {
 
     return 0;
 }
+*/
 
+// Nama File: level8.cpp
+// Deskripsi: Program Latihan C++ Level 8 - pointer dan memori
+// Dibuat Oleh : Fajarenaldi
+// Tanggal: 22 April 2025
+
+#include <iostream>
+#include <limits>
+
+using namespace std;
+
+int main() {
+    int angkaKu = 100;
+    int *ptrAngka;
+
+    cout << "Nilai angka saya adalah: " << angkaKu << endl;
+    cout << "Alamat memorinya adalah: " << &angkaKu << endl;
+
+    ptrAngka = &angkaKu;
+    cout << "Alamat dari pointer 'ptrAngka' adalah: " << ptrAngka;
+
+    cout << "Nilai yang ditunjuk oleh ptrAngka (*ptrAngka) adalah: " << *ptrAngka << endl;
+
+    cout << "Mengubah nilai angkaKu dengan pointer (*ptrAngka) menjadi 90" << endl;
+    *ptrAngka = 90;
+
+    cout << "Nilai angkaKu sekarang adalah: " << angkaKu << endl;
+    cout << "Nilai yang ditunjuk oleh ptrAngka (*ptrAngka) adalah: " << *ptrAngka << endl;
+
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cout << "\nTekan Enter...";
+    cin.get();
+
+    return 0;
+}
 // --- Definisi Fungsi (jika ada fungsi buatan sendiri) ---
 // Tulis isi dari fungsi yang kamu deklarasikan di atas tadi di sini
 // Contoh:
